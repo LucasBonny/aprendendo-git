@@ -17,13 +17,34 @@ Naturalmente, os projetos que utilizam o git, precisam ter um repositório em um
 >[!important]
 >O repositório local fica armazenado na pasta `.git` dentro da pasta do projeto.
 
-`git add .` - Adiciona todos os arquivos do projeto na area de staging.
-
 `git status` - Verifica se os arquivos foram adicionados na area de staging.
+
+```bash
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+```
+
+`git add .` - Adiciona todos os arquivos do projeto que foram modificados na area de staging.
+
 
 `git commit -m "Primeira versão"` - Salva uma nova versão do projeto.
 
-> [!important]
+```bash
+$ git commit -m "Testando markdown para as aulas"
+[main 9507c91] Testando markdown para as aulas
+ 1 file changed, 71 insertions(+)
+```
+
+> [!caution]
 > Para garantir que o projeto seja salvo na branch main em seu github, será necessario executar o comando: `git branch -M main`
 
 `git remote add origin git@github.com:usuario/projeto.git` - Associar o repositório local ao repositório remoto.
