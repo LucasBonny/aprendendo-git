@@ -1,73 +1,10 @@
-# aprendendo-git
-Aprendendo a utilizar o versionamento adequado em projetos.
+# Aprendendo Git
+Aprendendo a utilizar o versionamento adequado em projetos com o git.
 
-## teste de commit
-comando: `git add .`
+# Aula 1 - Repositório Local e Remoto
 
-## listando os arquivos que foram alterados
-comando: `git status`
-- [ ] tarefa 1
-- [ ] tarefa 2
-- [x] tarefa 3
-
-## criando um novo commit
-comando: `git commit -m "Mensagem do commit"`
-
-## criando um novo commit com a opção --amend
-comando: `git commit --amend -m "Mensagem do commit"`
-
-## criando um novo commit com a opção --no-verify
-comando: `git commit --no-verify -m "Mensagem do commit"`
-
-## criando um novo commit com a opção --no-edit
-comando: `git commit --no-edit -m "Mensagem do commit"`
-
-## criando um novo commit com a opção --no-verify --no-edit
-comando: `git commit --no-verify --no-edit -m "Mensagem do commit"`
-
-## criando um novo commit com a opção --allow-empty
-comando: `git commit --allow-empty -m "Mensagem do commit"`
-
-Comentários:
-
-> [!ERROR]
-> Some error info.
-
-> [!NOTE]
-> Some important info.
-
-> [!INFO]
-> Some info.
-
-> [!TIP]
-> Some info.
+Um projeto que é versionado pelo git e conhecido como repositório de versionamento.
+Naturalmente, os projetos que utilizam o git, precisam ter um repositório em um servidor remoto, possibilizando a utilização de vários usuários permitindo a colaboração entre eles dentro do projeto.
 
 > [!IMPORTANT]
-> Some important info.
-
-> [!SUCCESS]
-> Some info.
-
-> [!QUESTION]
-> Some info.
-
-> [!WARNING]
-> Some info.
-
-> [!CAUTION]
-> Some info.
-
-> [!DANGER]
-> Some info.
-
-> [!BUG]
-> Some info.
-
-> [!IDEA]
-> Some info.
-
-> [!HINT]
-> Some info.
-
-
-# Parte 2
+> O repositório remoto é o repositório que fica armazenado no servidor, e o repositório local é o repositório que fica armazenado no computador do usuário.
