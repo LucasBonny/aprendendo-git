@@ -66,7 +66,7 @@ To github.com:LucasBonny/aprendendo-git.git
 
 Ao modificar um arquivo no projeto, ele precisa ser salvo na area de staging para ser adicionado ao commit.
 
-para verificar se há arquivos modificados na area de staging, execute o comando `git status`
+para verificar se há arquivos modificados na area de staging, execute o comando `git status`.
 
 ```bash
 $ git status
@@ -140,4 +140,31 @@ Date:   Mon Nov 25 22:48:33 2024 -0300
 
     Aula 2 - Mostrando Terminal
 ...
+```
+
+# Aula 5 - Git Log
+
+Para ver o histórico de versões de um projeto, execute o comando `git log`.
+
+```bash
+$ git log
+commit cf4e7ff53f3b2dd55828a67e4b53e9e746cdf313 (HEAD -> main, origin/main, origin/HEAD)
+Author: Lucas Bonny <lucasbonnyb8@gmail.com>
+Date:   Mon Nov 25 23:05:28 2024 -0300
+
+    Aula 3 - Um novo commit
+
+commit 7b6746a4fc0e2d581f452d03b3dca61ac62a5191
+Author: Lucas Bonny <lucasbonnyb8@gmail.com>
+Date:   Mon Nov 25 22:48:33 2024 -0300
+
+    Aula 2 - Mostrando Terminal
+...
+```
+Após vários commits criados em seu projeto, utilizar o comando `git log --oneline` para ver o histórico de versões de um projeto seria o mais adequado pois ele mostra apenas o hash do commit trazendo uma melhor visualização.
+
+```bash
+$ git log --oneline
+cf4e7ff (HEAD -> main, origin/main, origin/HEAD) Aula 3 - Um novo commit
+7b6746a Aula 2 - Mostrando Terminal
 ```
