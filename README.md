@@ -195,3 +195,34 @@ index 6ed0ac0..d5ddc94 100644
 
 > [!tip]
 > Ao utilizar o comando `git diff <commit>`, ele mostra as diferenças entre o commit atual e o commit escolhido.
+
+# Aula 7 - Git checkout
+
+O git checkout permite alterar arquivos ou branch do projeto local permitindo voltar a estados anteriores do projeto.
+
+Para utilizar o git checkout, execute o comando `git checkout <hash>` ou `git checkout <branch>`.
+
+> [!tip]
+> Os hashes do git podem ser pego executando o comando `git log --oneline` e os branches criados podem ser pego executando o comando `git branch`.
+
+```bash
+$ git checkout cf4e7ff
+Previous HEAD position was 7b6746a Aula 2 - Mostrando Terminal
+HEAD is now at cf4e7ff Aula 3 - Um novo commit
+```
+
+> [!important]
+> o `git checkout main` volta o projeto para a versão atual do projeto caso não queira voltar para um commit especifico.
+
+Agora se caso queira voltar para algum dos commit's anteriores, execute o comando `git checkout HEAD~N`.
+
+```bash
+$ git checkout HEAD~2
+Previous HEAD position was cf4e7ff Aula 3 - Um novo commit
+HEAD is now at 7b6746a Aula 2 - Mostrando Terminal
+```
+
+> [!caution]
+> Ao voltar certifique-se de não alterar os arquivos do projeto, pois eles podem ser perdidos.
+> Utilize o comando `git reset`, `git clean -df` e `git checkout -- .` para descartar alterações feitas.
+
