@@ -168,3 +168,30 @@ $ git log --oneline
 cf4e7ff (HEAD -> main, origin/main, origin/HEAD) Aula 3 - Um novo commit
 7b6746a Aula 2 - Mostrando Terminal
 ```
+
+# Aula 6 - Git diff 
+
+Utilizar o comando `git diff <arquivo>` ou `git diff <commit>` para ver as diferenças entre os commits no terminal.
+
+```bash
+$ git diff
+diff --git a/README.md b/README.md
+index 6ed0ac0..d5ddc94 100644
+--- a/README.md
++++ b/README.md
+@@ -167,4 +167,8 @@ Após vários commits criados em seu projeto, utilizar o comando `git log --onel
+ $ git log --oneline
+ cf4e7ff (HEAD -> main, origin/main, origin/HEAD) Aula 3 - Um novo commit
+ 7b6746a Aula 2 - Mostrando Terminal
+-```
+\ No newline at end of file
++```
++
++# Aula 6 - Git diff
++
++Utilizar o comando `git diff <arquivo>` ou `git diff <commit>` para ver as diferenças entre os commits no terminal.
+\ No newline at end of file
+```
+
+> [!tip]
+> Ao utilizar o comando `git diff <commit>`, ele mostra as diferenças entre o commit atual e o commit escolhido.
