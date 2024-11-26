@@ -62,7 +62,7 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To github.com:LucasBonny/aprendendo-git.git
    ee91248..9507c91  main -> main
 ```
-# Aula 3 - Um novo commit
+# Aula 3 - Um Novo Commit
 
 Ao modificar um arquivo no projeto, ele precisa ser salvo na area de staging para ser adicionado ao commit.
 
@@ -103,4 +103,41 @@ Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:LucasBonny/aprendendo-git.git
    0bf8725..7b6746a  main -> main
+```
+
+# Aula 4 - Clonar um Projeto
+
+Para clonar um projeto do github trazento todo o historico de versões, execute o comando `git clone git@github.com:usuario/projeto.git` em seu terminal.
+
+```bash
+$ git clone git@github.com:LucasBonny/aprendendo-git.git
+Cloning into 'aprendendo-git'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (4/4), done.
+```
+> [!caution]
+> Importante salientar que o uso de modo SSH é estritamente recomendado, pois ele garante a segurança do acesso ao repositório remoto.
+
+Após isso basta utilizar o comando `cd aprendendo-git` para entrar na pasta do projeto clonado.
+E após editar o projeto, execute os passos da (Aula 3 - Um Novo Commit)[#Aula-3---Um-Novo-Commit].
+
+Com isso você poderá verificar o histórico de versões do projeto pelo terminal com o comando `git log`.
+
+```bash
+$ git log
+commit cf4e7ff53f3b2dd55828a67e4b53e9e746cdf313 (HEAD -> main, origin/main, origin/HEAD)
+Author: Lucas Bonny <lucasbonnyb8@gmail.com>
+Date:   Mon Nov 25 23:05:28 2024 -0300
+
+    Aula 3 - Um novo commit
+
+commit 7b6746a4fc0e2d581f452d03b3dca61ac62a5191
+Author: Lucas Bonny <lucasbonnyb8@gmail.com>
+Date:   Mon Nov 25 22:48:33 2024 -0300
+
+    Aula 2 - Mostrando Terminal
+...
 ```
